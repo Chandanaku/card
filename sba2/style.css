@@ -1,0 +1,124 @@
+body {
+  font-family: Arial, sans-serif;
+  line-height: 1.6;
+  padding: 1rem;
+  background: #f9f9f9;
+  color: #333;
+}
+
+.head {
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+}
+#scrum {
+  text-align: center;
+  color: #333;
+  font-weight: bolder;
+}
+
+.list {
+  display: grid;
+  grid-template-columns: 1fr 1fr 3fr;
+  color: blueviolet;
+}
+.ll {
+  text-decoration: none;
+}
+ul li {
+  display: none;
+}
+ul:hover li {
+  display: block;
+}
+.container {
+  background-image: url("https://miro.medium.com/v2/resize:fit:1400/1*EQaXLONM-SSKcwTobimH7g.png");
+  background-size: 100% 100%;
+  background-color: rgb(255, 255, 255, 0.85);
+  background-blend-mode: lighten;
+}
+
+footer {
+  text-align: center;
+  margin-top: 2rem;
+  padding: 1rem;
+  background: #e0e0e0;
+  font-size: 0.9rem;
+}
+
+@media (max-width: 1024px) {
+  #scrum {
+    font-size: 1.5rem;
+  }
+
+  .ll {
+    font-size: 1rem;
+  }
+}
+
+@media (max-width: 600px) {
+  .items {
+    flex-direction: column;
+    width: 100%;
+    margin-top: 1rem;
+    gap: 0.5rem;
+  }
+
+  .main {
+    grid-template-columns: 1fr;
+  }
+
+  #scrum {
+    font-size: 1.2rem;
+  }
+
+  .ll {
+    font-size: 0.95rem;
+  }
+}
+.form-section {
+  grid-column: span 3;
+  margin-top: 2rem;
+}
+
+form div {
+  margin-bottom: 1rem;
+}
+
+label {
+  display: block;
+  margin-bottom: 0.25rem;
+  font-weight: bold;
+}
+
+input {
+  width: 100%;
+  padding: 0.5rem;
+  font-size: 1rem;
+}
+
+button {
+  background-color: #003366;
+  color: white;
+  padding: 0.6rem 1rem;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+button:focus {
+  outline: 3px dashed #ffcc00;
+  outline-offset: 2px;
+}
+
+.help-text {
+  font-size: 0.9rem;
+  color: #555;
+}
+
+.status {
+  margin-top: 1rem;
+  min-height: 1.5rem;
+  font-weight: bold;
+}
